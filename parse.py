@@ -1,10 +1,10 @@
-file=open("ResultLogs/SVTest1P_LOG.txt","r") 
+file=open("../ResultLogs/RFTest2P_LOG.txt","r") 
 
 row = file.readlines()
 
 file.close()
 
-file=open("ResultLogs/SVTest1P_LOG_Parsed.txt","w") 
+file=open("../ResultLogs/RFTest2P_LOG_Parsed.txt","w") 
 
 output = ''
 total = 0
