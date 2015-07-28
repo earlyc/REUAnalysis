@@ -11,9 +11,11 @@ sv$alg <- matrix( rep('red', dim(sv)[1] ), ncol = 1 );
 
 data = rbind(rf,ba,bo,sv)
 
+pdf("plotAll.pdf")
+
 plot(data$Accuracy,data$Time, col = as.character(data$alg), pch = 16, xlab = "Accuracy", ylab = "Execution Time")
 
 legend(75,11, c("Random Forest", "Bayes", "Boosting", "SVM"), lty=0, fill=c("purple", "green", "blue", "red"))
 
-#legend('topright', names(a)[-1] , lty=1, col=c('red', 'blue', 'green',' brown'), bty='n', cex=.75)
+dev.off()
 
